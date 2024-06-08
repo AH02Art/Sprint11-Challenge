@@ -1,0 +1,43 @@
+####
+
+Post http://localhost:9000/api/login
+content-type: application/json
+
+{ 
+    "username": "Alex", 
+    "password": "12345678"
+}
+
+####
+
+Get http://localhost:9000/api/articles
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJyb2xlIjoiTGVhcm5lciIsInNjaG9vbCI6IkJsb29tdGVjaCIsImlhdCI6MTcxNzYzOTk4OSwiZXhwIjoxNzE3NjQzNTg5fQ.5e5Y6PNQ7KaYXyOXmIzpwlf2WoIoN8fXpDiyT9Ru754
+
+####
+
+Post http://localhost:9000/api/articles
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJyb2xlIjoiTGVhcm5lciIsInNjaG9vbCI6IkJsb29tdGVjaCIsImlhdCI6MTcxNzYzOTk4OSwiZXhwIjoxNzE3NjQzNTg5fQ.5e5Y6PNQ7KaYXyOXmIzpwlf2WoIoN8fXpDiyT9Ru754
+
+{ 
+    "title": "Alex", 
+    "text": "Alex", 
+    "topic": "JavaScript"
+}
+
+####
+
+Put http://localhost:9000/api/articles/4
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJyb2xlIjoiTGVhcm5lciIsInNjaG9vbCI6IkJsb29tdGVjaCIsImlhdCI6MTcxNzYzOTk4OSwiZXhwIjoxNzE3NjQzNTg5fQ.5e5Y6PNQ7KaYXyOXmIzpwlf2WoIoN8fXpDiyT9Ru754
+
+{ 
+    "title": "Jacob", 
+    "text": "npm install Jacob", 
+    "topic": "Node" 
+}
+
+####
+
+Delete http://localhost:9000/api/articles/4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFsZXgiLCJyb2xlIjoiTGVhcm5lciIsInNjaG9vbCI6IkJsb29tdGVjaCIsImlhdCI6MTcxNzYzOTk4OSwiZXhwIjoxNzE3NjQzNTg5fQ.5e5Y6PNQ7KaYXyOXmIzpwlf2WoIoN8fXpDiyT9Ru754
